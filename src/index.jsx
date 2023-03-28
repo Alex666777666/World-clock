@@ -5,9 +5,9 @@ import Clock from './Clock.jsx'
 
 ReactDOM.render(
   <>
-    <Clock city='New York' time={-4} />
-    <Clock city='Kyiv' time={3} />
-    <Clock city='London' time={1} />
+    <Clock location='New York' offset={-4} />
+    <Clock location='Kyiv' offset={3} />
+    <Clock location='London' offset={1} />
   </>,
   document.querySelector('#root')
 )
