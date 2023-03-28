@@ -1,8 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.scss'
-import App from './App.jsx'
+import Clock from './Clock.jsx'
 
-const rootElement = document.querySelector('#root')
-
-ReactDOM.render(<App />, rootElement)
+ReactDOM.render(
+  <>
+    <Clock city='New York' time={-4} />
+    <Clock city='Kyiv' time={3} />
+    <Clock city='London' time={1} />
+  </>,
+  document.querySelector('#root')
+)
